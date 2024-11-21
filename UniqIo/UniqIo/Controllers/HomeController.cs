@@ -1,17 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
-//using UniqIo.Models;
+using UniqIo.DAL;
+using UniqIo.Models;
 
 namespace UniqIo.Controllers
 {
-	public class HomeController : Controller
+	public class HomeController(UniqIoDbContext _context) : Controller
 	{
-		public IActionResult Index()
-		{
-			return View();
-		}
-
-		public IActionResult About()
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Sliders.ToListAsync());
+        }
+        public IActionResult About()
 		{
 			return View();
 		}

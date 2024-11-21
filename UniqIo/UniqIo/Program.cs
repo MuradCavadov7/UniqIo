@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using UniqIo.DAL;
+
 namespace UniqIo
 {
 	public class Program
@@ -6,10 +9,14 @@ namespace UniqIo
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
-			// Add services to the container.
+            // Add services to the container.
 			builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<UniqIoDbContext>(opt =>
+            {
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
+            });
 
-			var app = builder.Build();
+            var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
 			if (!app.Environment.IsDevelopment())
@@ -24,9 +31,12 @@ namespace UniqIo
 
 			app.UseRouting();
 
-			//app.UseAuthorization();
+            //app.UseAuthorization();
+            app.MapControllerRoute(
+              name: "area",
+              pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
-			app.MapControllerRoute(
+            app.MapControllerRoute(
 				name: "default",
 				pattern: "{controller=Home}/{action=Index}/{id?}");
 
