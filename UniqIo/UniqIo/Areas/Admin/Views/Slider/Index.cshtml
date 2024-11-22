@@ -33,7 +33,15 @@
                             <td>@item.Link</td>
                             <td><a class="btn btn-success" asp-controller="Slider" asp-action="Update" asp-route-id="@item.Id">Update</a></td>
                             <td><a class="btn btn-danger" asp-controller="Slider" asp-action="Delete" asp-route-id="@item.Id">Delete</a></td>
-                            <td><a class="btn btn-info" asp-controller="Slider" asp-action="Toggle" asp-route-id="@item.Id">Hide</a></td>
+                            <td>@if (!item.IsDeleted)
+                            {
+                                <a asp-action="Hide" asp-route-id="@item.Id" class="btn btn-dark">Hide</a>
+                            }
+                            else
+                            {
+                                <a asp-action="Show" asp-route-id="@item.Id" class="btn btn-light">Show</a>
+                            }
+                            </td>
                         </tr>
                     }
                 </tbody>

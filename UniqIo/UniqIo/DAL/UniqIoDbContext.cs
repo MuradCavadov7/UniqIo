@@ -6,8 +6,10 @@ namespace UniqIo.DAL;
 public class UniqIoDbContext : DbContext
 {
     public DbSet<Slider> Sliders { get; set; }
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Company> Companies { get; set; }
 
-        public UniqIoDbContext(DbContextOptions opt) :base(opt)
+    public UniqIoDbContext(DbContextOptions opt) :base(opt)
         {
             
         }

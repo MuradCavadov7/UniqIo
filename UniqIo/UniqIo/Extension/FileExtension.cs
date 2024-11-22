@@ -2,35 +2,35 @@
 
 public static class FileExtension
 {
-  public static bool IsValidType(this string contentType)
+    public static bool IsValidType(this IFormFile file, string contentType)
     {
-
-        if (contentType.StartsWith("image") )
-        {
+        if (file.ContentType.StartsWith(contentType))
+        { 
             return true;
         }
         return false;
     }
 
-    public static bool IsValidSize( this long kb)
+    public static bool IsValidSize(this IFormFile file, int kb)
     {
-        if (kb>5120)
+        if (file.Length <= kb*1024)
         {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
-    public static string Upload(this IFormFile file,string path)
+    public static async Task<string> UploadAsync(this IFormFile file, params string[] paths)
     {
-        if (!Directory.Exists(path))
+        string uploadpath = Path.Combine(paths);
+        if (!Directory.Exists(uploadpath))
         {
-            Directory.CreateDirectory(path);
+            Directory.CreateDirectory(uploadpath);
         }
         string newFileName = Path.GetRandomFileName() + Path.GetExtension(file.FileName);
-        string fullPath = Path.Combine(path, newFileName);
+        string fullPath = Path.Combine(uploadpath, newFileName);
         using (Stream stream = File.Create(fullPath))
         {
-            file.CopyTo(stream);
+            await file.CopyToAsync(stream);
         }
         return newFileName;
     }

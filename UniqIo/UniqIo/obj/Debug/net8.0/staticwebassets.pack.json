@@ -8421,12 +8421,16 @@
       "PackagePath": "staticwebassets\\assets\\style.css"
     },
     {
-      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\uvn1sttk.2pg.jpg",
-      "PackagePath": "staticwebassets\\imgs\\sliders\\uvn1sttk.2pg.jpg"
+      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\products\\nqq0igme.0mo.jpeg",
+      "PackagePath": "staticwebassets\\imgs\\products\\nqq0igme.0mo.jpeg"
     },
     {
-      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\v4nwzlve.jlt.webp",
-      "PackagePath": "staticwebassets\\imgs\\sliders\\v4nwzlve.jlt.webp"
+      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\0g4keky3.zci.webp",
+      "PackagePath": "staticwebassets\\imgs\\sliders\\0g4keky3.zci.webp"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\i0ypwlao.ltb.webp",
+      "PackagePath": "staticwebassets\\imgs\\sliders\\i0ypwlao.ltb.webp"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UniqIo.Microsoft.AspNetCore.StaticWebAssets.props",

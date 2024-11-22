@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniqIo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb29a6a5fe415a82813c3bbcaea164aab34d6539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1f62b06b551e3f179a8a1c17b91af7e2e2acfe6")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniqIo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniqIo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

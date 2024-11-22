@@ -24,28 +24,22 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
     [HttpPost]
     public async Task<IActionResult> Create(SCreateVM vm)
     {
-        if (!ModelState.IsValid) return View(vm);
-        if (!vm.File.ContentType.IsValidType())
+        if(vm.File != null)
         {
-            ModelState.AddModelError("File", "Cannot be anything else of type image");
-            return View(vm);
+            if (!vm.File.IsValidType("image"))
+            {
+                ModelState.AddModelError("File", "Cannot be anything else of type image");
+            }
+            if (!vm.File.IsValidSize(800))
+            {
+                ModelState.AddModelError("File", "The file size can be max 800kb");
+            }
         }
-        if (vm.File.Length.IsValidSize())
-        {
-            ModelState.AddModelError("File", "The file size can be max 5mb");
-            return View(vm);
-        }
-        //string newFileName = Path.GetRandomFileName() + Path.GetExtension(vm.File.FileName);
-        var newFileName =vm.File.Upload(Path.Combine(_env.WebRootPath, "imgs", "sliders"));
-        
 
-        //using (Stream stream = System.IO.File.Create(Path.Combine(_env.WebRootPath, "imgs", "sliders", newFileName)))
-        //{
-        //    await vm.File.CopyToAsync(stream);
-        //}
+        if (!ModelState.IsValid) return View(vm);
         Slider slider = new Slider
         {
-            ImageUrl = newFileName,
+            ImageUrl = await vm.File!.UploadAsync(_env.WebRootPath, "imgs", "sliders"),
             Title = vm.Title,
             Subtitle = vm.Subtitle!,
             Link = vm.Link
@@ -69,6 +63,66 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
             await _context.SaveChangesAsync();
         }
 
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Update(int? id)
+    {
+        if (id == null)
+            return BadRequest();
+
+        var slider = await _context.Sliders.FindAsync(id);
+        if (slider == null)
+            return NotFound();
+
+
+
+        return View();
+    }
+
+
+    [HttpPost]
+    public async Task<IActionResult> Update(int? id, Slider slider, SCreateVM vm)
+    {
+        if (id == null) return BadRequest();
+        var entity = await _context.Sliders.FindAsync(id.Value);
+        if (entity == null) return NotFound();
+        entity.Title = slider.Title;
+        entity.Subtitle = slider.Subtitle;
+        entity.Link = slider.Link;
+        if (vm.File is not null)
+        {
+            string newFileName = await vm.File.UploadAsync(_env.WebRootPath, "imgs", "sliders");
+            if (!string.IsNullOrEmpty(entity.ImageUrl))
+            {
+                string filePath = Path.Combine(_env.WebRootPath, "imgs", "sliders", entity.ImageUrl);
+                if (System.IO.File.Exists(filePath))
+                {
+                    System.IO.File.Delete(filePath);
+                }
+            }
+            entity.ImageUrl = newFileName;
+        }
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Hide(int? id)
+    {
+        var slider = await _context.Sliders.FindAsync(id);
+        if(slider == null) return NotFound();
+        slider.IsDeleted = true;
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Show(int? id)
+    {
+
+        var slider = await _context.Sliders.FindAsync(id);
+        if (slider == null) return NotFound();
+        slider.IsDeleted = false;
+        await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
 }
