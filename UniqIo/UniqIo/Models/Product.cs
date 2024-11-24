@@ -21,4 +21,5 @@ public class Product :BaseEntity
     public int Discount { get; set; }
     public int? CompanyId { get; set; }
     public Company? Company { get; set; }
+    public ICollection<ProductImage> Images { get; set; }
 }

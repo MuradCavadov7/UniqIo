@@ -11,17 +11,9 @@ namespace UniqIo.Areas.Admin.Controllers;
 [Area("Admin")]
 public class CompanyController(UniqIoDbContext _context) : Controller
 {
-    //public IActionResult Index()
-    //{
-    //    return View();
-    //}
     public async Task<IActionResult> Index()
     {
         var companies = await _context.Companies.ToListAsync();
-        if (companies == null)
-        {
-            companies = new List<Company>();
-        }
         return View(companies);
     }
     public IActionResult Create()
@@ -41,6 +33,7 @@ public class CompanyController(UniqIoDbContext _context) : Controller
 
     }
 
+
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null) return BadRequest();
@@ -52,22 +45,23 @@ public class CompanyController(UniqIoDbContext _context) : Controller
         return RedirectToAction(nameof(Index));
     }
 
+
     public async Task<IActionResult> Update(int? id)
     {
         if (id == null) return BadRequest();
-            var data = await _context.Companies.Where(x => x.Id == id.Value).FirstOrDefaultAsync();
-            if (data == null) return NotFound();
-            return View(data);
+        var data = await _context.Companies.Where(x => x.Id == id.Value).FirstOrDefaultAsync();
+        if (data == null) return NotFound();
+        return View(data);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Update(int? id,CCreateVM vm)
+    public async Task<IActionResult> Update(int? id, CCreateVM vm)
     {
         if (id == null) return BadRequest();
-            var entity = await _context.Companies.FindAsync(id.Value);
-            if (entity == null) return NotFound();
-            entity.Name = vm.Name;
-            await _context.SaveChangesAsync();
+        var entity = await _context.Companies.FindAsync(id.Value);
+        if (entity == null) return NotFound();
+        entity.Name = vm.Name;
+        await _context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
     }

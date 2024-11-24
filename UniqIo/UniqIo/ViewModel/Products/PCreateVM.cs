@@ -1,7 +1,7 @@
 ﻿using UniqIo.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace UniqIo.ViewModel.Product;
+namespace UniqIo.ViewModel.Products;
 
 public class PCreateVM
 {
@@ -16,7 +16,21 @@ public class PCreateVM
     public int Discount { get; set; }
     public int CompanyId { get; set; }
     public IFormFile File { get; set; }
+    public ICollection<IFormFile>? OtherFiles { get; set; }
 
+    public static implicit operator Product(PCreateVM vm)
+    {
+        return new Product
+        {
+            CompanyId = vm.CompanyId,
+            CostPrice = vm.CostPrice,
+            Description = vm.Description,
+            Discount = vm.Discount,
+            Name = vm.Name,
+            PCount = vm.PCount,
+            SellPrice = vm.SellPrice
+        };
+    }
 }
 
 

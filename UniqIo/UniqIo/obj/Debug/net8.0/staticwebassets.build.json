@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g7B/PWYWPJafch4m7QSjmMT/7CVYPEN8vNP72n0kDCk=",
+  "Hash": "0SBx4XAi+RUMxOf4ZMvPXBAIZ/lmJ0JJ+4DtxFgCyyQ=",
   "Source": "UniqIo",
   "BasePath": "_content/UniqIo",
   "Mode": "Default",
@@ -40031,6 +40031,25 @@
       "OriginalItemSpec": "wwwroot\\imgs\\products\\nqq0igme.0mo.jpeg"
     },
     {
+      "Identity": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\products\\wapb4fg3.kg0.webp",
+      "SourceId": "UniqIo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\",
+      "BasePath": "_content/UniqIo",
+      "RelativePath": "imgs/products/wapb4fg3.kg0.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\products\\wapb4fg3.kg0.webp"
+    },
+    {
       "Identity": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\0g4keky3.zci.webp",
       "SourceId": "UniqIo",
       "SourceType": "Discovered",
@@ -40067,6 +40086,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\sliders\\i0ypwlao.ltb.webp"
+    },
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\vl1ful52.2v0.webp",
+      "SourceId": "UniqIo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\",
+      "BasePath": "_content/UniqIo",
+      "RelativePath": "imgs/sliders/vl1ful52.2v0.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\sliders\\vl1ful52.2v0.webp"
     }
   ]
 }

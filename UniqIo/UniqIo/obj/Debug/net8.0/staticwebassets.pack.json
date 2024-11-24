@@ -8425,12 +8425,20 @@
       "PackagePath": "staticwebassets\\imgs\\products\\nqq0igme.0mo.jpeg"
     },
     {
+      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\products\\wapb4fg3.kg0.webp",
+      "PackagePath": "staticwebassets\\imgs\\products\\wapb4fg3.kg0.webp"
+    },
+    {
       "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\0g4keky3.zci.webp",
       "PackagePath": "staticwebassets\\imgs\\sliders\\0g4keky3.zci.webp"
     },
     {
       "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\i0ypwlao.ltb.webp",
       "PackagePath": "staticwebassets\\imgs\\sliders\\i0ypwlao.ltb.webp"
+    },
+    {
+      "Id": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\vl1ful52.2v0.webp",
+      "PackagePath": "staticwebassets\\imgs\\sliders\\vl1ful52.2v0.webp"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.UniqIo.Microsoft.AspNetCore.StaticWebAssets.props",
