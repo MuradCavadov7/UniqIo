@@ -24,7 +24,7 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
     [HttpPost]
     public async Task<IActionResult> Create(SCreateVM vm)
     {
-        if(vm.File != null)
+        if (vm.File != null)
         {
             if (!vm.File.IsValidType("image"))
             {
@@ -51,7 +51,7 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null) return BadRequest();
-        var vm =_context.Sliders.Where(x=>x.Id == id).FirstOrDefault();
+        var vm = _context.Sliders.Where(x => x.Id == id).FirstOrDefault();
         string imagePath = Path.Combine(_env.WebRootPath, "imgs", "sliders", vm.ImageUrl);
         if (System.IO.File.Exists(imagePath))
         {
@@ -71,38 +71,44 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
         if (id == null)
             return BadRequest();
 
-        var slider = await _context.Sliders.FindAsync(id);
+        var slider = await _context.Sliders
+                .Where(x => x.Id == id)
+                .Select(x => new SUpdateVM
+                {
+                    Title = x.Title,
+                    Link = x.Link,
+                    Subtitle = x.Subtitle,
+                    FileUrl = x.ImageUrl
+                })
+                .FirstOrDefaultAsync();
         if (slider == null)
             return NotFound();
-
-
-
-        return View();
+        return View(slider);
     }
 
 
     [HttpPost]
-    public async Task<IActionResult> Update(int? id, Slider slider, SCreateVM vm)
+    public async Task<IActionResult> Update(int? id, SUpdateVM vm)
     {
         if (id == null) return BadRequest();
-        var entity = await _context.Sliders.FindAsync(id.Value);
-        if (entity == null) return NotFound();
-        entity.Title = slider.Title;
-        entity.Subtitle = slider.Subtitle;
-        entity.Link = slider.Link;
-        if (vm.File is not null)
+        if (vm.File != null)
         {
-            string newFileName = await vm.File.UploadAsync(_env.WebRootPath, "imgs", "sliders");
-            if (!string.IsNullOrEmpty(entity.ImageUrl))
+            if (!vm.File.IsValidType("image"))
             {
-                string filePath = Path.Combine(_env.WebRootPath, "imgs", "sliders", entity.ImageUrl);
-                if (System.IO.File.Exists(filePath))
-                {
-                    System.IO.File.Delete(filePath);
-                }
+                ModelState.AddModelError("File", "Cannot be anything else of type image");
             }
-            entity.ImageUrl = newFileName;
+            if (!vm.File.IsValidSize(800))
+            {
+                ModelState.AddModelError("File", "The file size can be max 800kb");
+            }
         }
+        if (!ModelState.IsValid) return View(vm);
+        var entity = await _context.Sliders.FindAsync(id);
+        if (entity == null) return NotFound();
+        entity.Title = vm.Title;
+        entity.Link = vm.Link;
+        entity.Subtitle = vm.Subtitle;
+        entity.ImageUrl = await vm.File.UploadAsync(_env.WebRootPath, "imgs", "sliders");
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
     }
@@ -110,7 +116,7 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
     public async Task<IActionResult> Hide(int? id)
     {
         var slider = await _context.Sliders.FindAsync(id);
-        if(slider == null) return NotFound();
+        if (slider == null) return NotFound();
         slider.IsDeleted = true;
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));

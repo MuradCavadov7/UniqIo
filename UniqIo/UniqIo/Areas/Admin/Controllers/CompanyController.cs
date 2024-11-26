@@ -49,7 +49,11 @@ public class CompanyController(UniqIoDbContext _context) : Controller
     public async Task<IActionResult> Update(int? id)
     {
         if (id == null) return BadRequest();
-        var data = await _context.Companies.Where(x => x.Id == id.Value).FirstOrDefaultAsync();
+        var data = await _context.Companies.Where(x => x.Id == id).Select(x => new CCreateVM
+        {
+            Name = x.Name
+        }).FirstOrDefaultAsync();
+        
         if (data == null) return NotFound();
         return View(data);
     }
@@ -58,7 +62,7 @@ public class CompanyController(UniqIoDbContext _context) : Controller
     public async Task<IActionResult> Update(int? id, CCreateVM vm)
     {
         if (id == null) return BadRequest();
-        var entity = await _context.Companies.FindAsync(id.Value);
+        var entity = await _context.Companies.FindAsync(id);
         if (entity == null) return NotFound();
         entity.Name = vm.Name;
         await _context.SaveChangesAsync();

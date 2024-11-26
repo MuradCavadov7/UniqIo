@@ -6,6 +6,8 @@ using UniqIo.Extention;
 using Microsoft.EntityFrameworkCore;
 using UniqIo.ViewModel.Products;
 using UniqIo.ViewModel.Sliders;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using NuGet.Packaging;
 
 namespace UniqIo.Areas.Admin.Controllers;
 
@@ -90,43 +92,91 @@ public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _contex
     {
         if (id == null)
             return BadRequest();
-        var product = await _context.Products.FindAsync(id);
+        var product = await _context.Products.Where(x=>x.Id== id).Select(x=>new PUpdateVM
+        {
+            Id = x.Id,
+            CompanyId =x.CompanyId ?? 0,
+            Name = x.Name,
+            Description = x.Description,
+            CostPrice = x.CostPrice,
+            SellPrice = x.SellPrice,
+            Discount = x.Discount,
+            FileUrl = x.CoverImage,
+            PCount = x.PCount,
+            OtherFilesUrls = x.Images.Select(y => y.ImageUrl)
+        }).FirstOrDefaultAsync();
         if (product == null)
             return NotFound();
         ViewBag.Categories = await _context.Companies.Where(x => !x.IsDeleted).ToListAsync();
-        return View();
+        return View(product);
     }
 
 
     [HttpPost]
-    public async Task<IActionResult> Update(int? id, Product product, PCreateVM vm)
+    public async Task<IActionResult> Update(int? id,PUpdateVM vm)
     {
         if (id == null) return BadRequest();
+
+        if (vm.File != null)
+        {
+            if (!vm.File.IsValidType("image"))
+                ModelState.AddModelError("File", "File must be an image");
+            if (!vm.File.IsValidSize(800))
+                ModelState.AddModelError("File", "File must be less than 800kb");
+        }
+        if (vm.OtherFiles.Any())
+        {
+            if (!vm.OtherFiles.All(x => x.IsValidType("image")))
+            {
+                string fileNames = string.Join(',', vm.OtherFiles.Where(x => !x.IsValidType("image")).Select(x => x.FileName));
+                ModelState.AddModelError("OtherFiles", fileNames + "File(s) must be an image");
+            }
+            if (!vm.OtherFiles.All(x => x.IsValidSize(800)))
+            {
+                string fileNames = string.Join(',', vm.OtherFiles.Where(x => !x.IsValidSize(800)).Select(x => x.FileName));
+                ModelState.AddModelError("OtherFiles", fileNames + "File(s) must be less than 800kb");
+            }
+
+        }
+        if (!ModelState.IsValid)
+        {
+            ViewBag.Categories = await _context.Companies.Where(x => !x.IsDeleted).ToListAsync();
+            return View(vm);
+        }
+        if (!await _context.Companies.AnyAsync(x => x.Id == vm.CompanyId))
+        {
+            ViewBag.Categories = await _context.Companies.Where(x => !x.IsDeleted).ToListAsync();
+            ModelState.AddModelError("CompanyId", "Company not found");
+            return View();
+        }
         var entity = await _context.Products.FindAsync(id.Value);
         if (entity == null) return NotFound();
-        entity.Name = product.Name;
-        entity.Description = product.Description;
-        entity.CostPrice = product.CostPrice;
-        entity.SellPrice = product.SellPrice;
-        entity.PCount = product.PCount;
-        entity.Discount = product.Discount;
-        entity.CompanyId = product.CompanyId;
-        entity.CoverImage = product.CoverImage;
-        entity.Images = product.Images;
-        if (vm.File is not null)
+        entity.Name = vm.Name;
+        entity.Description = vm.Description;
+        entity.CostPrice = vm.CostPrice;
+        entity.SellPrice = vm.SellPrice;
+        entity.PCount = vm.PCount;
+        entity.Discount = vm.Discount;
+        entity.CompanyId = vm.CompanyId;
+        entity.CoverImage = await vm.File.UploadAsync(_env.WebRootPath, "imgs", "sliders");
+        entity = await _context.Products.Include(x => x.Images)
+                .Where(x => x.Id == id)
+                .FirstOrDefaultAsync();
+        entity.Images.AddRange(vm.OtherFiles.Select(x => new ProductImage
         {
-            string newFileName = await vm.File.UploadAsync(_env.WebRootPath, "imgs", "sliders");
-            if (!string.IsNullOrEmpty(entity.CoverImage))
-            {
-                string filePath = Path.Combine(_env.WebRootPath, "imgs", "sliders", entity.CoverImage);
-                if (System.IO.File.Exists(filePath))
-                {
-                    System.IO.File.Delete(filePath);
-                }
-            }
-            entity.CoverImage = newFileName;
-        }
+            ImageUrl = x.UploadAsync(_env.WebRootPath, "imgs", "products").Result
+        }).ToList());
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
+    }
+    [HttpPost]
+    public async Task<IActionResult> DeleteImgs(int id, IEnumerable<string> imgNames)
+    {
+        int result = await _context.ProductImages.Where(x => imgNames.Contains(x.ImageUrl)).ExecuteDeleteAsync();
+        if (result > 0)
+        {
+            //serverden (komputerden (fayllardan)) kohne shekilleri sil
+        }
+        return RedirectToAction(nameof(Update), new { id });
     }
 }
