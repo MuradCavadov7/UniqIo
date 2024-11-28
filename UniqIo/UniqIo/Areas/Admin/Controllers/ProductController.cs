@@ -175,7 +175,15 @@ public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _contex
         int result = await _context.ProductImages.Where(x => imgNames.Contains(x.ImageUrl)).ExecuteDeleteAsync();
         if (result > 0)
         {
-            //serverden (komputerden (fayllardan)) kohne shekilleri sil
+            var stringPath = imgNames.Select(imgs => Path.Combine(_env.WebRootPath, "imgs", "products")).ToList();
+
+            foreach (var item in stringPath)
+            {
+                if (System.IO.File.Exists(item))
+                {
+                    System.IO.File.Delete(item);
+                }
+            }
         }
         return RedirectToAction(nameof(Update), new { id });
     }

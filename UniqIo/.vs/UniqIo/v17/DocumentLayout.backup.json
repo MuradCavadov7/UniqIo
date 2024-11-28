@@ -3,68 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\views\\shared\\_alayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\views\\shared\\_alayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\views\\product\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\views\\company\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\views\\company\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\products\\pupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\products\\pupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\dal\\uniqiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\dal\\uniqiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\sliders\\slistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\sliders\\slistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\products\\plistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\products\\plistitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\commons\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\commons\\homevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\baskets\\basketcookieitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\baskets\\basketcookieitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,202 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_ALayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Shared\\_ALayout.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Views\\Shared\\_ALayout.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Shared\\_ALayout.cshtml*",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Views\\Shared\\_ALayout.cshtml*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "UniqIo\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "UniqIo\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAjwJUAAACWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T18:54:21.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UniqIoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\DAL\\UniqIoDbContext.cs",
-              "RelativeDocumentMoniker": "UniqIo\\DAL\\UniqIoDbContext.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\DAL\\UniqIoDbContext.cs",
-              "RelativeToolTip": "UniqIo\\DAL\\UniqIoDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:27:25.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SliderController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Controllers\\SliderController.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowG4AAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:18:53.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PUpdateVM.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Products\\PUpdateVM.cs",
-              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Products\\PUpdateVM.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Products\\PUpdateVM.cs",
-              "RelativeToolTip": "UniqIo\\ViewModel\\Products\\PUpdateVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T18:01:52.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T18:15:13.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAIwG4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T20:48:10.023Z",
+              "WhenOpened": "2024-11-28T18:22:08.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Company\\Update.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Views\\Company\\Update.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Company\\Update.cshtml",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Views\\Company\\Update.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-26T16:47:15.306Z",
+              "Title": "BasketCookieItemVM.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Baskets\\BasketCookieItemVM.cs",
+              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Baskets\\BasketCookieItemVM.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Baskets\\BasketCookieItemVM.cs*",
+              "RelativeToolTip": "UniqIo\\ViewModel\\Baskets\\BasketCookieItemVM.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T18:03:30.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Views\\Product\\Update.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T16:42:54.911Z",
+              "Title": "ShopController.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\ShopController.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Controllers\\ShopController.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\ShopController.cs*",
+              "RelativeToolTip": "UniqIo\\Controllers\\ShopController.cs*",
+              "ViewState": "AgIAADIAAAAAAAAAAAAqwEcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:22:41.236Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "UniqIo\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T18:07:53.039Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "HomeVM.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Commons\\HomeVM.cs",
-              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Commons\\HomeVM.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Commons\\HomeVM.cs",
-              "RelativeToolTip": "UniqIo\\ViewModel\\Commons\\HomeVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T18:05:48.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SListItemVM.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Sliders\\SListItemVM.cs",
-              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Sliders\\SListItemVM.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Sliders\\SListItemVM.cs",
-              "RelativeToolTip": "UniqIo\\ViewModel\\Sliders\\SListItemVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T18:03:58.861Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PListItemVM.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Products\\PListItemVM.cs",
-              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Products\\PListItemVM.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Products\\PListItemVM.cs",
-              "RelativeToolTip": "UniqIo\\ViewModel\\Products\\PListItemVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T18:00:48.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Views\\Product\\Create.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD0AAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T15:26:50.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductImage.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductImage.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\ProductImage.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductImage.cs",
-              "RelativeToolTip": "UniqIo\\Models\\ProductImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T14:54:18.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\Product.cs",
-              "RelativeToolTip": "UniqIo\\Models\\Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:21:19.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwCoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T20:56:37.835Z"
             }
           ]
         }

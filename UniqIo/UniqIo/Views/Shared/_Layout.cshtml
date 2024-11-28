@@ -26,6 +26,7 @@
 
     <!-- Modernizr JS -->
     <script src="~/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+    @await RenderSectionAsync("style", false)
 </head>
 
 <body>
@@ -52,7 +53,7 @@
                             <nav class="mainmenu__nav d-none d-lg-block">
                                 <ul class="main__menu">
                                     <li><a asp-action="Index" asp-controller="Home">Home</a></li>
-                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                                     <li><a asp-action="About" asp-controller="Home">About</a></li>
                                     <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                                 </ul>
@@ -61,7 +62,7 @@
                                 <nav id="mobile_dropdown">
                                     <ul>
                                         <li><a asp-action="Index" asp-controller="Home">Home</a></li>
-                                        <li><a href="#">pages</a></li>
+                                        <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                                         <li><a asp-action="About" asp-controller="Home">About</a></li>
                                         <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                                     </ul>
