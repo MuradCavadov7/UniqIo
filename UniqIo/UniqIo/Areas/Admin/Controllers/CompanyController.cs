@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using UniqIo.DAL;
 using UniqIo.Models;
-using UniqIo.ViewModel.Company;
+using UniqIo.ViewModel.Companies;
 
 namespace UniqIo.Areas.Admin.Controllers;
 

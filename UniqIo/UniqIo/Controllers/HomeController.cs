@@ -9,8 +9,8 @@ using UniqIo.ViewModel.Sliders;
 
 namespace UniqIo.Controllers
 {
-	public class HomeController(UniqIoDbContext _context) : Controller
-	{
+    public class HomeController(UniqIoDbContext _context) : Controller
+    {
         public async Task<IActionResult> Index()
         {
             HomeVM vm = new HomeVM();
@@ -21,21 +21,25 @@ namespace UniqIo.Controllers
                 Title = s.Title,
                 Subtitle = s.Subtitle
             }).ToListAsync();
-            vm.Products = await _context.Products.Select(p => new PListItemVM
-            {
-                Id = p.Id,
-                Name = p.Name,
-                SellPrice = p.SellPrice,
-                Discount = p.Discount,
-                IsStock = p.PCount > 0,
-                CoverImage = p.CoverImage,
-            }).ToListAsync();
+            vm.Companies = await _context.Companies.OrderByDescending(x => x.Products!.Count).Take(4).ToListAsync();
+            vm.PopularProducts = await _context.Products.Where(x => vm.Companies.Select(y => y.Id).Contains(x.CompanyId!.Value)).Take(10)
+                .Select(p => new PListItemVM
+                {
+                    Id = p.Id,
+                    Name = p.Name,
+                    SellPrice = p.SellPrice,
+                    Discount = p.Discount,
+                    IsStock = p.PCount > 0,
+                    CoverImage = p.CoverImage,
+                    CompanyId = p.CompanyId.Value
+                }).ToListAsync();
+
             return View(vm);
         }
         public IActionResult About()
-		{
-			return View();
-		}
+        {
+            return View();
+        }
 
         public IActionResult Contact()
         {

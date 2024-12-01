@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json;
 using UniqIo.DAL;
 using UniqIo.ViewModel.Baskets;
-using UniqIo.ViewModel.Company;
+using UniqIo.ViewModel.Companies;
 using UniqIo.ViewModel.Products;
 using UniqIo.ViewModel.Shops;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -51,7 +51,7 @@ public class ShopController(UniqIoDbContext _context) : Controller
     public async Task<IActionResult> AddBasket(int id)
     {
         var basket = getBasket();
-        var item = basket.FirstOrDefault(x=> x.Id == id);
+        var item = basket.FirstOrDefault(x => x.Id == id);
         if (item is not null)
         {
             item.Count++;
@@ -71,8 +71,8 @@ public class ShopController(UniqIoDbContext _context) : Controller
             Count = 1,
         };
         var data = JsonSerializer.Serialize(basket);
-        HttpContext.Response.Cookies.Append("basket",data);
-        return Ok();  
+        HttpContext.Response.Cookies.Append("basket", data);
+        return Ok();
     }
     public async Task<IActionResult> GetBasket()
     {
@@ -83,5 +83,23 @@ public class ShopController(UniqIoDbContext _context) : Controller
         string? value = HttpContext.Request.Cookies["basket"];
         if (string.IsNullOrEmpty(value)) return [];
         return JsonSerializer.Deserialize<List<BasketCookieItemVM>>(value) ?? [];
+    }
+
+    public async Task<IActionResult> DeleteBasketItem(int id)
+    {
+        var basket = getBasket();
+        var item = basket.FirstOrDefault(x => x.Id == id);
+        if (item is not null)
+        {
+            item.Count--;
+
+            if (item.Count == 0)
+            {
+                basket.Remove(item);
+            }
+            var data = JsonSerializer.Serialize(basket);
+            HttpContext.Response.Cookies.Append("basket", data);
+        }
+        return Ok();
     }
 }

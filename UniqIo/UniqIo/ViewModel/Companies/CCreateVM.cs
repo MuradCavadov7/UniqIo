@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace UniqIo.ViewModel.Company
+namespace UniqIo.ViewModel.Companies
 {
     public class CCreateVM
     {

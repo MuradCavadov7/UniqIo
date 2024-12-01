@@ -1,4 +1,4 @@
-﻿namespace UniqIo.ViewModel.Company;
+﻿namespace UniqIo.ViewModel.Companies;
 
 public class CompanyAndProductVM
 {

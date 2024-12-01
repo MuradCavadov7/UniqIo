@@ -1,4 +1,4 @@
-﻿using UniqIo.ViewModel.Company;
+﻿using UniqIo.ViewModel.Companies;
 using UniqIo.ViewModel.Products;
 
 namespace UniqIo.ViewModel.Shops;

@@ -8,4 +8,5 @@ public class PListItemVM
 	public int Discount {  get; set; }
 	public bool IsStock {  get; set; }
 	public string CoverImage {  get; set; }
+	public int CompanyId {  get; set; }
 }
