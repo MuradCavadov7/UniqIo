@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqIo.DAL;
+using UniqIo.Models;
 
 namespace UniqIo
 {
@@ -15,7 +17,12 @@ namespace UniqIo
             {
                 opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
             });
-
+			builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+			{
+				opt.User.RequireUniqueEmail = true;
+				opt.Password.RequiredLength = 5;
+				opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(10);
+			}).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqIoDbContext>();
             var app = builder.Build();
 
 			// Configure the HTTP request pipeline.

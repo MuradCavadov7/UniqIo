@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using UniqIo.Models;
 
 namespace UniqIo.DAL;
 
-public class UniqIoDbContext : DbContext
+public class UniqIoDbContext : IdentityDbContext<AppUser>
 {
     public DbSet<Slider> Sliders { get; set; }
     public DbSet<Product> Products { get; set; }
