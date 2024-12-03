@@ -8,11 +8,13 @@ using UniqIo.ViewModel.Products;
 using UniqIo.ViewModel.Sliders;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using NuGet.Packaging;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UniqIo.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
+[Authorize]
 public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _context) : Controller
 {
     public async Task<IActionResult> Index()

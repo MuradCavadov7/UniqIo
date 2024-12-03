@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 using System.Net;
@@ -11,6 +12,7 @@ namespace UniqIo.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
+[Authorize]
 public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env) : Controller
 {
     public async Task<IActionResult> Index()

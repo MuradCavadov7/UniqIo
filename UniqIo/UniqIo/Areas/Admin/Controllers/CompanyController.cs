@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using UniqIo.DAL;
 using UniqIo.Models;
@@ -9,6 +10,7 @@ namespace UniqIo.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
+[Authorize]
 public class CompanyController(UniqIoDbContext _context) : Controller
 {
     public async Task<IActionResult> Index()

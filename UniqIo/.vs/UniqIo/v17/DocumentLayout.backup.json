@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\shared\\components\\layoutheader\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\shared\\components\\layoutheader\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\areas\\admin\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\areas\\admin\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\auths\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\auths\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,91 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CompanyController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\CompanyController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Areas\\Admin\\Controllers\\CompanyController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Areas\\Admin\\Controllers\\CompanyController.cs",
-              "RelativeToolTip": "UniqIo\\Areas\\Admin\\Controllers\\CompanyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T12:12:17.82Z",
-              "IsPinned": true,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "UniqIo\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "UniqIo\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAuwLkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-03T17:42:05.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shared\\Components\\LayoutHeader\\Default.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\Shared\\Components\\LayoutHeader\\Default.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shared\\Components\\LayoutHeader\\Default.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\Shared\\Components\\LayoutHeader\\Default.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAACsAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T20:30:22.142Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Program.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs*",
+              "RelativeToolTip": "UniqIo\\Program.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T17:32:00.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAANgAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T20:30:00.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T19:17:08.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegisterVM.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\RegisterVM.cs",
-              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Auths\\RegisterVM.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\RegisterVM.cs",
-              "RelativeToolTip": "UniqIo\\ViewModel\\Auths\\RegisterVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T19:07:18.924Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAAAKgAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-02T17:45:42.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UniqIo\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs",
               "RelativeToolTip": "UniqIo\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwE0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T17:43:38.859Z",
               "EditorCaption": ""

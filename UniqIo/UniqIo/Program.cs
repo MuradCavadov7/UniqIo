@@ -21,8 +21,18 @@ namespace UniqIo
 			{
 				opt.User.RequireUniqueEmail = true;
 				opt.Password.RequiredLength = 5;
+				opt.Password.RequireNonAlphanumeric = false;
+				opt.Password.RequireUppercase = false;
+				opt.Lockout.MaxFailedAccessAttempts = 3;
 				opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(10);
 			}).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqIoDbContext>();
+
+			builder.Services.ConfigureApplicationCookie(x =>
+			{
+				x.LoginPath = "/login";
+				x.AccessDeniedPath = "/Home/AccessDenied";
+
+			});
             var app = builder.Build();
 
 			// Configure the HTTP request pipeline.
@@ -38,8 +48,8 @@ namespace UniqIo
 
 			app.UseRouting();
 
-            //app.UseAuthorization();
-            app.MapControllerRoute(
+			app.UseAuthorization();
+			app.MapControllerRoute(
               name: "area",
               pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
