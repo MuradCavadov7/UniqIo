@@ -22,7 +22,7 @@ namespace UniqIo.Controllers
                 Subtitle = s.Subtitle
             }).ToListAsync();
             vm.Companies = await _context.Companies.OrderByDescending(x => x.Products!.Count).Take(4).ToListAsync();
-            vm.PopularProducts = await _context.Products.Where(x => vm.Companies.Select(y => y.Id).Contains(x.CompanyId!.Value)).Take(10)
+            vm.PopularProducts = await _context.Products.Where(x => vm.Companies.Select(y => y.Id).Contains(x.CompanyId!.Value)&& !x.IsDeleted).Take(10)
                 .Select(p => new PListItemVM
                 {
                     Id = p.Id,
@@ -37,6 +37,10 @@ namespace UniqIo.Controllers
             return View(vm);
         }
         public IActionResult About()
+        {
+            return View();
+        } 
+        public IActionResult AccessDenied()
         {
             return View();
         }

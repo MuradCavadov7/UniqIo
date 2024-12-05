@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Net;
 using UniqIo.DAL;
 using UniqIo.Extention;
+using UniqIo.Helpers;
 using UniqIo.Models;
 using UniqIo.ViewModel.Sliders;
 
@@ -12,7 +13,7 @@ namespace UniqIo.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
-[Authorize]
+[Authorize(Roles = RoleConstants.AccessToDashboard)]
 public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env) : Controller
 {
     public async Task<IActionResult> Index()

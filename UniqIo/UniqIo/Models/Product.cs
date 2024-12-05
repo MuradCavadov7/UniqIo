@@ -22,4 +22,6 @@ public class Product :BaseEntity
     public int? CompanyId { get; set; }
     public Company? Company { get; set; }
     public ICollection<ProductImage> Images { get; set; }
+    public ICollection<ProductRating>? ProductRatings { get; set; }
+    public ICollection<ProductComment>? ProductComments {  get; set; }
 }

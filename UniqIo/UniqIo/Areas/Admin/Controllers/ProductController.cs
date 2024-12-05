@@ -9,12 +9,13 @@ using UniqIo.ViewModel.Sliders;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using NuGet.Packaging;
 using Microsoft.AspNetCore.Authorization;
+using UniqIo.Helpers;
 
 namespace UniqIo.Areas.Admin.Controllers;
 
 
 [Area("Admin")]
-[Authorize]
+[Authorize(Roles = RoleConstants.AccessToDashboard)]
 public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _context) : Controller
 {
     public async Task<IActionResult> Index()

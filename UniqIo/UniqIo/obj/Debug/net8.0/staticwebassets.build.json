@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "stYb1tCc3QP4oFbiaP22nkcsaH6AqcM1SZdAJ8c3JiE=",
+  "Hash": "XehqSI/vVU+jMcqOXoAPbrWoyZM1Wr5eqyI8vxl4dmE=",
   "Source": "UniqIo",
   "BasePath": "_content/UniqIo",
   "Mode": "Default",
@@ -40827,6 +40827,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgs\\sliders\\0g4keky3.zci.webp"
+    },
+    {
+      "Identity": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\0hv5unt3.qzr.jpg",
+      "SourceId": "UniqIo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\",
+      "BasePath": "_content/UniqIo",
+      "RelativePath": "imgs/sliders/0hv5unt3.qzr.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\sliders\\0hv5unt3.qzr.jpg"
     },
     {
       "Identity": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\wwwroot\\imgs\\sliders\\i0ypwlao.ltb.webp",

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UniqIo.DAL;
 
@@ -11,9 +12,11 @@ using UniqIo.DAL;
 namespace UniqIo.Migrations
 {
     [DbContext(typeof(UniqIoDbContext))]
-    partial class UniqIoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241205122042_CreatedRatingTable")]
+    partial class CreatedRatingTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -303,38 +306,6 @@ namespace UniqIo.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("UniqIo.Models.ProductComment", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("CommitComment")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("CreatedTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("ProductComments");
-                });
-
             modelBuilder.Entity("UniqIo.Models.ProductImage", b =>
                 {
                     b.Property<int>("Id")
@@ -485,21 +456,6 @@ namespace UniqIo.Migrations
                     b.Navigation("Company");
                 });
 
-            modelBuilder.Entity("UniqIo.Models.ProductComment", b =>
-                {
-                    b.HasOne("UniqIo.Models.Product", "Product")
-                        .WithMany("ProductComments")
-                        .HasForeignKey("ProductId");
-
-                    b.HasOne("UniqIo.Models.AppUser", "User")
-                        .WithMany("ProductComments")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("Product");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("UniqIo.Models.ProductImage", b =>
                 {
                     b.HasOne("UniqIo.Models.Product", "Product")
@@ -528,8 +484,6 @@ namespace UniqIo.Migrations
 
             modelBuilder.Entity("UniqIo.Models.AppUser", b =>
                 {
-                    b.Navigation("ProductComments");
-
                     b.Navigation("ProductRatings");
                 });
 
@@ -541,8 +495,6 @@ namespace UniqIo.Migrations
             modelBuilder.Entity("UniqIo.Models.Product", b =>
                 {
                     b.Navigation("Images");
-
-                    b.Navigation("ProductComments");
 
                     b.Navigation("ProductRatings");
                 });

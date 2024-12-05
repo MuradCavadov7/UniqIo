@@ -41,7 +41,14 @@
                     <!-- End MAinmenu Ares -->
                     <div class="col-md-2 col-lg-2 col-6">
                         <ul class="menu-extra">
-                            <li><a asp-action="Register" asp-controller="Account"><span class="ti-user"></span></a></li>
+                            @if (Context.User.Identity.IsAuthenticated)
+                            {
+                                <li><a asp-action="LogOut" asp-controller="Account"><span class="ti-shift-left-alt"></span></a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-action="Login" asp-controller="Account"><span class="ti-user"></span></a></li>
+                            }
                             <li class="cart__menu"><span class="ti-shopping-cart"></span></li>
                         </ul>
                     </div>

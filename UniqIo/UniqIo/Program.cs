@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqIo.DAL;
+using UniqIo.Extension;
 using UniqIo.Models;
 
 namespace UniqIo
@@ -49,6 +50,8 @@ namespace UniqIo
 			app.UseRouting();
 
 			app.UseAuthorization();
+			app.UseUserSeed();
+
 			app.MapControllerRoute(
               name: "area",
               pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");

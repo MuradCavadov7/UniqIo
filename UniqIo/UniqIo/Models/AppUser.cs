@@ -7,5 +7,7 @@ namespace UniqIo.Models
         public string Fullname {  get; set; }
         public string? ProfileImage {  get; set; }
         public string? Adress {  get; set; }
+        public ICollection<ProductRating>? ProductRatings { get; set; }
+        public ICollection<ProductComment>? ProductComments { get; set; }
     }
 }
