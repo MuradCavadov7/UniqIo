@@ -3,44 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\shopcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\services\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\services\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\dal\\uniqiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\dal\\uniqiodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\productcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\helpers\\smptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\helpers\\smptoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,136 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UniqIoDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\DAL\\UniqIoDbContext.cs",
-              "RelativeDocumentMoniker": "UniqIo\\DAL\\UniqIoDbContext.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\DAL\\UniqIoDbContext.cs",
-              "RelativeToolTip": "UniqIo\\DAL\\UniqIoDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:43:22.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\AppUser.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\AppUser.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\AppUser.cs",
-              "RelativeToolTip": "UniqIo\\Models\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:42:45.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductComment.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductComment.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\ProductComment.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductComment.cs",
-              "RelativeToolTip": "UniqIo\\Models\\ProductComment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T16:29:35.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\Product.cs",
-              "RelativeToolTip": "UniqIo\\Models\\Product.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA3wBkAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T13:30:46.111Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductRating.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductRating.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Models\\ProductRating.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Models\\ProductRating.cs",
-              "RelativeToolTip": "UniqIo\\Models\\ProductRating.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Title": "EmailTemplates.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Helpers\\EmailTemplates.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Helpers\\EmailTemplates.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Helpers\\EmailTemplates.cs*",
+              "RelativeToolTip": "UniqIo\\Helpers\\EmailTemplates.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T12:04:09.857Z",
+              "WhenOpened": "2024-12-10T19:10:36.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T20:49:28.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shop\\Details.cshtml",
-              "RelativeDocumentMoniker": "UniqIo\\Views\\Shop\\Details.cshtml",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Shop\\Details.cshtml",
-              "RelativeToolTip": "UniqIo\\Views\\Shop\\Details.cshtml",
-              "ViewState": "AgIAALoAAAAAAAAAAAAuwMEAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-04T20:43:48.515Z",
+              "DocumentIndex": 4,
+              "Title": "SmptOptions.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Helpers\\SmptOptions.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Helpers\\SmptOptions.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Helpers\\SmptOptions.cs*",
+              "RelativeToolTip": "UniqIo\\Helpers\\SmptOptions.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:34:46.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ShopController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\ShopController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Controllers\\ShopController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\ShopController.cs",
-              "RelativeToolTip": "UniqIo\\Controllers\\ShopController.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAUwFUAAAAqAAAAAAAAAA==",
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Implements\\EmailService.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Services\\Implements\\EmailService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Implements\\EmailService.cs*",
+              "RelativeToolTip": "UniqIo\\Services\\Implements\\EmailService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:37:03.971Z",
+              "WhenOpened": "2024-12-10T18:32:48.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "UniqIo\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "UniqIo\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAACDAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Interface\\IEmailService.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Services\\Interface\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Interface\\IEmailService.cs*",
+              "RelativeToolTip": "UniqIo\\Services\\Interface\\IEmailService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:58:29.783Z",
+              "WhenOpened": "2024-12-10T18:32:22.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "UniqIo\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "UniqIo\\Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAHAAAAAAAAAAAAA5wIYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T18:30:49.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "UniqIo\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\appsettings.Development.json",
+              "RelativeToolTip": "UniqIo\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-08T18:29:34.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs",
               "RelativeDocumentMoniker": "UniqIo\\Program.cs",
-              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs",
-              "RelativeToolTip": "UniqIo\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs*",
+              "RelativeToolTip": "UniqIo\\Program.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCMAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T17:32:00.578Z"
+              "WhenOpened": "2024-12-03T17:32:00.578Z",
+              "EditorCaption": ""
             }
           ]
         }

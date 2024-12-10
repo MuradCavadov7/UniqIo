@@ -1,8 +1,12 @@
+using Microsoft.AspNetCore.Builder.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniqIo.DAL;
 using UniqIo.Extension;
+using UniqIo.Helpers;
 using UniqIo.Models;
+using UniqIo.Services.Implements;
+using UniqIo.Services.Interface;
 
 namespace UniqIo
 {
@@ -27,8 +31,10 @@ namespace UniqIo
 				opt.Lockout.MaxFailedAccessAttempts = 3;
 				opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromSeconds(10);
 			}).AddDefaultTokenProviders().AddEntityFrameworkStores<UniqIoDbContext>();
-
-			builder.Services.ConfigureApplicationCookie(x =>
+			builder.Services.AddScoped<IEmailService, EmailService>();
+			var opt = new SmptOptions();
+			builder.Services.Configure<SmptOptions>(builder.Configuration.GetSection(SmptOptions.Name));
+            builder.Services.ConfigureApplicationCookie(x =>
 			{
 				x.LoginPath = "/login";
 				x.AccessDeniedPath = "/Home/AccessDenied";

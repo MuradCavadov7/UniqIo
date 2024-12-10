@@ -2,14 +2,17 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Text;
 using UniqIo.Extension;
 using UniqIo.Models;
+using UniqIo.Services.Interface;
 using UniqIo.ViewModel.Auths;
 using UniqIo.Views.Account.Enums;
 
 namespace UniqIo.Controllers;
 
-public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager, RoleManager<IdentityRole> _roleManager) : Controller
+public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager,
+	RoleManager<IdentityRole> _roleManager, IEmailService _service) : Controller
 {
     private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
     public IActionResult Register()
@@ -48,8 +51,10 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 			}
 			return View();
 		}
-		return View();
-	}
+        string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+        _service.SendEmailConfirmation(user.Email, user.UserName, token);
+        return Content("Email sent!");
+    }
 	//public async Task<IActionResult> Role()
 	//{
 	//	foreach (Roles item in Enum.GetValues(typeof(Roles)))
@@ -110,5 +115,23 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 		await _signInManager.SignOutAsync();
 		return RedirectToAction(nameof(Login));
 	}
+    public async Task<IActionResult> VerifyEmail(string token, string user)
+    {
+        var entity = await _userManager.FindByNameAsync(user);
+        if (entity is null) return BadRequest();
+        var result = await _userManager.ConfirmEmailAsync(entity, token.Replace(' ', '+'));
+        if (!result.Succeeded)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in result.Errors)
+            {
+                sb.AppendLine(item.Description);
+            }
+            return Content(sb.ToString());
+        }
+        await _signInManager.SignInAsync(entity, true);
+        return RedirectToAction("Index", "Home");
+
+    }
 
 }

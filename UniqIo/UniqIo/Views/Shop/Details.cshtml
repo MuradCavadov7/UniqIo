@@ -234,8 +234,6 @@
                                 </div>
                                 <!-- End RAting Area -->
                                 <div class="review__box">
-                            @if (User.Identity?.IsAuthenticated ?? false)
-                            {
                                 <form asp-action="Comment" asp-controller="Shop" id="review-form">
                                     <input type="hidden" name="productId" value="@Model.Id" />
                                         
@@ -253,8 +251,7 @@
                                         <div class="review-btn">
                                             <button>submit review</button>
                                         </div>
-                                    </form>  
-                            }                              
+                                    </form>                             
                                 </div>
                             </div>
                             <!-- End Single Content -->
