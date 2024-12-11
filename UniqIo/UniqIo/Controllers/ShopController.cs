@@ -176,6 +176,6 @@ public class ShopController(UniqIoDbContext _context) : Controller
             var data = JsonSerializer.Serialize(basket);
             HttpContext.Response.Cookies.Append("basket", data);
         }
-        return Ok();
+        return RedirectToAction("Index","Home");
     }
 }

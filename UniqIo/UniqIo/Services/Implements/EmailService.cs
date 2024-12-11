@@ -35,5 +35,16 @@ namespace UniqIo.Services.Implements
             _smtpClient.Send(message);
 
         }
+
+        public void SendResetPassword(string reciever, string name, string token)
+        {
+            MailAddress to = new(reciever);
+            MailMessage message = new MailMessage(_from, to);
+            message.IsBodyHtml = true;
+            message.Body = "Reset yout password";
+            string url = _context.Request.Scheme + "://" + _context.Request.Host + "/Account/ResetPassword?token=" + token + "&user=" + name;
+            message.Body = EmailTemplates.ResetPassword.Replace("__$name", name).Replace("__$link", url);
+            _smtpClient.Send(message);
+        }
     }
 }

@@ -133,5 +133,27 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
         return RedirectToAction("Index", "Home");
 
     }
+	public async Task<IActionResult> ResetPassword(string token,string user,string newPassword)
+	{
+		if (string.IsNullOrWhiteSpace(user))
+		{
+			return BadRequest("User parameter is required.");
+		}
+
+		var entity = await _userManager.FindByNameAsync(user);
+		if (entity is null) return BadRequest();
+		var result = await _userManager.ResetPasswordAsync(entity, token.Replace(' ','+'), newPassword);
+		if (!result.Succeeded)
+		{
+			StringBuilder sb = new StringBuilder();
+			foreach (var item in result.Errors)
+			{
+				sb.AppendLine(item.Description);
+			}
+			return Content(sb.ToString());
+		}
+        await _signInManager.SignInAsync(entity, true);
+        return RedirectToAction("Index", "Home");
+    }
 
 }
