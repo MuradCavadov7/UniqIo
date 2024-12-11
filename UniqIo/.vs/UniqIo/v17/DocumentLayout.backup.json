@@ -7,20 +7,36 @@
       "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\account\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\account\\forgetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\auths\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\auths\\resetpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\viewmodel\\auths\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\viewmodel\\auths\\forgotpasswordvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\helpers\\emailtemplates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\views\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\services\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\services\\interface\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|solutionrelative:uniqio\\services\\implements\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8761072B-C526-4781-80E1-96F72A54E241}|UniqIo\\UniqIo.csproj|c:\\users\\99477\\desktop\\uniqio\\uniqio\\uniqio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,8 +50,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "UniqIo\\Views\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "UniqIo\\Views\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T18:23:24.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ForgetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\ForgetPassword.cshtml",
+              "RelativeDocumentMoniker": "UniqIo\\Views\\Account\\ForgetPassword.cshtml",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\ForgetPassword.cshtml",
+              "RelativeToolTip": "UniqIo\\Views\\Account\\ForgetPassword.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-11T18:21:47.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResetPasswordVM.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\ResetPasswordVM.cs",
+              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Auths\\ResetPasswordVM.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\ResetPasswordVM.cs",
+              "RelativeToolTip": "UniqIo\\ViewModel\\Auths\\ResetPasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:15:10.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPasswordVM.cs",
+              "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\ForgotPasswordVM.cs",
+              "RelativeDocumentMoniker": "UniqIo\\ViewModel\\Auths\\ForgotPasswordVM.cs",
+              "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\ViewModel\\Auths\\ForgotPasswordVM.cs",
+              "RelativeToolTip": "UniqIo\\ViewModel\\Auths\\ForgotPasswordVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T17:55:27.439Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,14 +108,14 @@
               "RelativeDocumentMoniker": "UniqIo\\Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Views\\Account\\Login.cshtml*",
               "RelativeToolTip": "UniqIo\\Views\\Account\\Login.cshtml*",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKUAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-11T16:13:13.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "EmailTemplates.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Helpers\\EmailTemplates.cs",
               "RelativeDocumentMoniker": "UniqIo\\Helpers\\EmailTemplates.cs",
@@ -59,49 +123,48 @@
               "RelativeToolTip": "UniqIo\\Helpers\\EmailTemplates.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T19:10:36.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T19:10:36.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Implements\\EmailService.cs",
               "RelativeDocumentMoniker": "UniqIo\\Services\\Implements\\EmailService.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Implements\\EmailService.cs",
               "RelativeToolTip": "UniqIo\\Services\\Implements\\EmailService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwC4AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T18:32:48.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Interface\\IEmailService.cs",
               "RelativeDocumentMoniker": "UniqIo\\Services\\Interface\\IEmailService.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Services\\Interface\\IEmailService.cs",
               "RelativeToolTip": "UniqIo\\Services\\Interface\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T18:32:22.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "UniqIo\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Controllers\\AccountController.cs",
               "RelativeToolTip": "UniqIo\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAgwIEAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAASwLIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T18:30:49.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\99477\\Desktop\\UniqIo\\UniqIo\\UniqIo\\Program.cs",
               "RelativeDocumentMoniker": "UniqIo\\Program.cs",

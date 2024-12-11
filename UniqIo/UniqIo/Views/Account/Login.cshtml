@@ -163,14 +163,11 @@
 								<input asp-for="RememberMe">
 								<span> Remember me</span>
 								<div class="text-danger" asp-validation-summary="ModelOnly"></div>
-								@* <span class="forget"><a href="#">Forget Pasword?</a></span> *@
+								<span class="forget"><a asp-action="ForgotPassword">Forget Pasword?</a></span>
 							</div>
 							<div class="htc__login__btn mt--30">
 								<button class="btn btn-danger">Login</button>>
 							</div>
-						<div class="text-right mt-2">
-							<a asp-action="ResetPassword" class="text-danger">Reset Password</a>
-						</div>
 						</form>
 						<div class="htc__social__connect">
 							<h2>Or Login With</h2>

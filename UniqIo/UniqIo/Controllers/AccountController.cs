@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text;
 using UniqIo.Extension;
 using UniqIo.Models;
+using UniqIo.Services.Implements;
 using UniqIo.Services.Interface;
 using UniqIo.ViewModel.Auths;
 using UniqIo.Views.Account.Enums;
@@ -14,17 +15,17 @@ namespace UniqIo.Controllers;
 public class AccountController(UserManager<AppUser> _userManager, SignInManager<AppUser> _signInManager,
 	RoleManager<IdentityRole> _roleManager, IEmailService _service) : Controller
 {
-    private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
-    public IActionResult Register()
+	private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
+	public IActionResult Register()
 	{
-		if(isAuthenticated) return RedirectToAction("Index","Home");
+		if (isAuthenticated) return RedirectToAction("Index", "Home");
 		return View();
 	}
 	[HttpPost]
 	public async Task<IActionResult> Register(RegisterVM vm)
 	{
-        if (isAuthenticated) return RedirectToAction("Index", "Home");
-        if (!ModelState.IsValid)
+		if (isAuthenticated) return RedirectToAction("Index", "Home");
+		if (!ModelState.IsValid)
 		{
 			return View();
 		}
@@ -51,10 +52,10 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 			}
 			return View();
 		}
-        string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-        _service.SendEmailConfirmation(user.Email, user.UserName, token);
-        return Content("Email sent!");
-    }
+		string token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+		_service.SendEmailConfirmation(user.Email, user.UserName, token);
+		return Content("Email sent!");
+	}
 	//public async Task<IActionResult> Role()
 	//{
 	//	foreach (Roles item in Enum.GetValues(typeof(Roles)))
@@ -65,14 +66,14 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 	//}
 	public IActionResult Login()
 	{
-        if (isAuthenticated) return RedirectToAction("Index", "Home");
-        return View();
+		if (isAuthenticated) return RedirectToAction("Index", "Home");
+		return View();
 	}
 	[HttpPost]
 	public async Task<IActionResult> Login(LoginVM vm, string? returnUrl = null)
 	{
-        if (isAuthenticated) return RedirectToAction("Index", "Home");
-        if (!ModelState.IsValid) return View();
+		if (isAuthenticated) return RedirectToAction("Index", "Home");
+		if (!ModelState.IsValid) return View();
 		AppUser? user = null;
 		if (vm.UsernameOrEmail.Contains("@"))
 		{
@@ -100,7 +101,7 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 		}
 		if (string.IsNullOrWhiteSpace(returnUrl))
 		{
-			if(await _userManager.IsInRoleAsync(user, "Admin"))
+			if (await _userManager.IsInRoleAsync(user, "Admin"))
 			{
 				return RedirectToAction("Index", new { Controller = "Dashboard", Area = "Admin" });
 			}
@@ -115,34 +116,11 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 		await _signInManager.SignOutAsync();
 		return RedirectToAction(nameof(Login));
 	}
-    public async Task<IActionResult> VerifyEmail(string token, string user)
-    {
-        var entity = await _userManager.FindByNameAsync(user);
-        if (entity is null) return BadRequest();
-        var result = await _userManager.ConfirmEmailAsync(entity, token.Replace(' ', '+'));
-        if (!result.Succeeded)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var item in result.Errors)
-            {
-                sb.AppendLine(item.Description);
-            }
-            return Content(sb.ToString());
-        }
-        await _signInManager.SignInAsync(entity, true);
-        return RedirectToAction("Index", "Home");
-
-    }
-	public async Task<IActionResult> ResetPassword(string token,string user,string newPassword)
+	public async Task<IActionResult> VerifyEmail(string token, string user)
 	{
-		if (string.IsNullOrWhiteSpace(user))
-		{
-			return BadRequest("User parameter is required.");
-		}
-
 		var entity = await _userManager.FindByNameAsync(user);
 		if (entity is null) return BadRequest();
-		var result = await _userManager.ResetPasswordAsync(entity, token.Replace(' ','+'), newPassword);
+		var result = await _userManager.ConfirmEmailAsync(entity, token.Replace(' ', '+'));
 		if (!result.Succeeded)
 		{
 			StringBuilder sb = new StringBuilder();
@@ -152,8 +130,65 @@ public class AccountController(UserManager<AppUser> _userManager, SignInManager<
 			}
 			return Content(sb.ToString());
 		}
-        await _signInManager.SignInAsync(entity, true);
-        return RedirectToAction("Index", "Home");
-    }
+		await _signInManager.SignInAsync(entity, true);
+		return RedirectToAction("Index", "Home");
 
+	}
+	[HttpPost]
+	public async Task<IActionResult> ForgetPassword(ForgotPasswordVM vm)
+	{
+		if (!ModelState.IsValid)
+		{
+			return View(vm);
+		}
+		var user = await _userManager.FindByEmailAsync(vm.Email);
+		if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
+		{
+			return NotFound();
+		}
+
+		var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+		var resetLink = Url.Action("ResetPassword", "Account", new { token, user = user.UserName }, Request.Scheme);
+		_service.SendResetPassword(user.Email, user.UserName, token);
+
+		return RedirectToAction(nameof(Login));
+	}
+	public IActionResult ResetPassword(string userid, string token)
+	{
+		if (userid == null)
+		{
+			return BadRequest();
+		}
+		ResetPasswordVM resetPasswordVM = new ResetPasswordVM()
+		{
+			userid = userid,
+			token = token
+		};
+
+		return View(resetPasswordVM);
+	}
+	[HttpPost]
+	public async Task<IActionResult> ResetPassword(ResetPasswordVM vm)
+	{
+		if (!ModelState.IsValid)
+		{
+			return View(vm);
+		}
+		var user = await _userManager.FindByIdAsync(vm.userid);
+		if (user == null)
+		{
+			return NotFound();
+		}
+		var result = await _userManager.ResetPasswordAsync(user, vm.token, vm.NewPassword);
+		if (!result.Succeeded)
+		{
+			foreach (var error in result.Errors)
+			{
+				ModelState.AddModelError("", error.Description);
+			}
+			return View(vm);
+		}
+		return RedirectToAction(nameof(Login));
+	}
 }
