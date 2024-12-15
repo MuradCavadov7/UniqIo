@@ -7,6 +7,7 @@ using UniqIo.DAL;
 using UniqIo.Extention;
 using UniqIo.Helpers;
 using UniqIo.Models;
+using UniqIo.ViewModel.Commons;
 using UniqIo.ViewModel.Sliders;
 
 namespace UniqIo.Areas.Admin.Controllers;
@@ -16,9 +17,10 @@ namespace UniqIo.Areas.Admin.Controllers;
 [Authorize(Roles = RoleConstants.AccessToDashboard)]
 public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env) : Controller
 {
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? take= 1,int? page = 1)
     {
-        return View(await _context.Sliders.ToListAsync());
+        ViewBag.Pagination = new PaginationItemsVM(await _context.Sliders.CountAsync(), take.Value, page.Value);
+        return View(await _context.Sliders.Skip((page.Value - 1) * take.Value).Take(take.Value).ToListAsync());
     }
     public IActionResult Create()
     {
@@ -33,7 +35,7 @@ public class SliderController(UniqIoDbContext _context, IWebHostEnvironment _env
             {
                 ModelState.AddModelError("File", "Cannot be anything else of type image");
             }
-            if (!vm.File.IsValidSize(800))
+            if (!vm.File.IsValidSize(1000))
             {
                 ModelState.AddModelError("File", "The file size can be max 800kb");
             }

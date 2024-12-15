@@ -10,6 +10,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using NuGet.Packaging;
 using Microsoft.AspNetCore.Authorization;
 using UniqIo.Helpers;
+using UniqIo.ViewModel.Commons;
 
 namespace UniqIo.Areas.Admin.Controllers;
 
@@ -18,9 +19,15 @@ namespace UniqIo.Areas.Admin.Controllers;
 [Authorize(Roles = RoleConstants.AccessToDashboard)]
 public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _context) : Controller
 {
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? take = 2, int? page = 1 )
     {
-        return View(await _context.Products.Include(x=>x.Company).ToListAsync());
+		if (!page.HasValue) page = 1;
+		if (!take.HasValue) take = 2;
+		var query = _context.Products.Include(x => x.Company).AsQueryable();
+		var data = await query.Skip(take.Value * (page.Value - 1)).Take(take.Value).ToListAsync();
+		int total = await query.CountAsync();
+		ViewBag.PaginationItems = new PaginationItemsVM(total, take.Value, page.Value);
+		return View(data); ;
     }
     public async Task<IActionResult> Create()
     {

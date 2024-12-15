@@ -5,6 +5,7 @@ using UniqIo.DAL;
 using UniqIo.Extension;
 using UniqIo.Helpers;
 using UniqIo.Models;
+using UniqIo.ViewModel.Commons;
 using UniqIo.ViewModel.Companies;
 
 namespace UniqIo.Areas.Admin.Controllers;
@@ -15,10 +16,10 @@ namespace UniqIo.Areas.Admin.Controllers;
 [Authorize(Roles = RoleConstants.AccessToDashboard)]
 public class CompanyController(UniqIoDbContext _context) : Controller
 {
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int? page = 1,int? take = 3)
     {
-        var companies = await _context.Companies.ToListAsync();
-        return View(companies);
+        ViewBag.Pagination = new PaginationItemsVM(await _context.Companies.CountAsync(), take.Value, page.Value);
+        return View(await _context.Companies.Skip((page.Value - 1) * take.Value).Take(take.Value).ToListAsync());
     }
     public IActionResult Create()
     {

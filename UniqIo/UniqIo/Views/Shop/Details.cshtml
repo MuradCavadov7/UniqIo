@@ -189,16 +189,21 @@
                             </div>
                             <!-- End Single Content -->
                             <!-- Start Single Content -->
-                            <div role="tabpanel" id="reviews" class="product__tab__content">
-                                <div class="review__address__inner">
+                    <div role="tabpanel" id="reviews" class="product__tab__content">
+                        <div class="review__address__inner">
+                            <h3>Customer Reviews</h3>
+                            @if (Model.ProductComments != null && Model.ProductComments.Any())
+                            {
+                                @foreach (var comment in Model.ProductComments)
+                                {
                                     <!-- Start Single Review -->
                                     <div class="pro__review">
                                         <div class="review__thumb">
-                                            <img src="images/review/1.jpg" alt="review images">
+                                            <img src="images/review/default.jpg" alt="review images">
                                         </div>
                                         <div class="review__details">
                                             <div class="review__info">
-                                                <h4><@Model.Name></h4>
+                                                <h4>@comment.UserId</h4>
                                                 <ul class="rating">
                                                     <li><i class="zmdi zmdi-star"></i></li>
                                                     <li><i class="zmdi zmdi-star"></i></li>
@@ -212,51 +217,64 @@
                                                 </div>
                                             </div>
                                             <div class="review__date">
-                                                <span>@Model.CreatedTime</span>
+                                                <span>@comment.CreatedTime.ToString("MMMM dd, yyyy")</span>
                                             </div>
-                                            <p></p>
+                                            <p>@comment.CommitComment</p>
                                         </div>
                                     </div>
                                     <!-- End Single Review -->
-                                </div>
-                                <!-- Start RAting Area -->
-                                <div class="rating__wrap">
-                                    <h2 class="rating-title">Write  A review</h2>
-                                    <h4 class="rating-title-2">Your Rating</h4>
-                                    <div class="rating__list">
-                                @foreach(var item in Model.ProductComments)
-                                {
-                                        <ul class="rating">
-                                            <li><i class="zmdi zmdi-star-half"></i></li>
-                                        </ul>
                                 }
-                                    </div>
-                                </div>
-                                <!-- End RAting Area -->
-                                <div class="review__box">
-                                <form asp-action="Comment" asp-controller="Shop" id="review-form">
-                                    <input type="hidden" name="productId" value="@Model.Id" />
-                                        
-                                        <div class="single-review-form">
-                                            <div class="review-box name">
-                                                <input type="text" placeholder="Type your name">
-                                                <input type="email" placeholder="Type your email">
-                                            </div>
-                                        </div>
-                                        <div class="single-review-form">
-                                            <div class="review-box message">
-                                        <textarea placeholder="Write your review"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="review-btn">
-                                            <button>submit review</button>
-                                        </div>
-                                    </form>                             
-                                </div>
-                            </div>
-                            <!-- End Single Content -->
+                            }
+                            else
+                            {
+                                <p>No reviews yet. Be the first to write one!</p>
+                            }
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                                </div>
+                        <!-- Start Rating Area -->
+                        <div class="rating__wrap">
+                            <h2 class="rating-title">Write A Review</h2>
+                            <h4 class="rating-title-2">Your Rating</h4>
+                            <div class="rating__list">
+                                @foreach (var item in Model.ProductComments)
+                                {
+                                    <ul class="rating">
+                                        <li><i class="zmdi zmdi-star"></i></li>
+                                        <li><i class="zmdi zmdi-star"></i></li>
+                                        <li><i class="zmdi zmdi-star"></i></li>
+                                        <li><i class="zmdi zmdi-star"></i></li>
+                                        <li><i class="zmdi zmdi-star-half"></i></li>
+                                    </ul>
+                                }
+                            </div>
+                        </div>
+                        <!-- End Rating Area -->
+                        <!-- Start Review Box -->
+                        <div class="review__box">
+                            <form asp-action="Comment" asp-controller="Shop" id="review-form" method="post">
+                                <input type="hidden" name="productId" value="@Model.Id" />
+
+                                <!-- Name and Email Fields -->
+                                <div class="single-review-form">
+                                    <div class="review-box name">
+                                        <input type="text" name="name" placeholder="Type your name" required>
+                                        <input type="email" name="email" placeholder="Type your email" required>
+                                    </div>
+                                </div>
+
+                                <!-- Review Textarea -->
+                                <div class="single-review-form">
+                                    <div class="review-box message">
+                                        <textarea name="comment" placeholder="Write your review" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="review-btn">
+                                    <button type="submit">Submit Review</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- End Review Box -->
+

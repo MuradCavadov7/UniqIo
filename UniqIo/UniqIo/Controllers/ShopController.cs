@@ -144,8 +144,9 @@ public class ShopController(UniqIoDbContext _context) : Controller
         }
         else
         {
-            commit.CommitComment = comment;
+            commit.CommitComment = comment.Trim();
         }
+
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Details), new { id = productId });
     }
