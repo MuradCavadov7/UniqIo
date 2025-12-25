@@ -83,17 +83,39 @@ public class ProductController(IWebHostEnvironment _env, UniqIoDbContext _contex
     public async Task<IActionResult> Delete(int? id)
     {
         if (id == null) return BadRequest();
-        var vm = _context.Products.Where(x => x.Id == id).FirstOrDefault();
-        string imagePath = Path.Combine(_env.WebRootPath, "imgs", "products", vm.CoverImage);
-        if (System.IO.File.Exists(imagePath))
+
+        var product = await _context.Products
+            .Include(p => p.ProductRatings)
+            .Include(p => p.ProductComments)
+            .FirstOrDefaultAsync(p => p.Id == id);
+
+        if (product == null) return NotFound();
+
+        if (!string.IsNullOrEmpty(product.CoverImage))
         {
-            System.IO.File.Delete(imagePath);
+            string imagePath = Path.Combine(
+                _env.WebRootPath,
+                "imgs",
+                "products",
+                product.CoverImage
+            );
+
+            if (System.IO.File.Exists(imagePath))
+                System.IO.File.Delete(imagePath);
         }
-        if (await _context.Products.AnyAsync(x => x.Id == id))
+
+        if (product.ProductComments?.Any() == true)
         {
-            _context.Products.Remove(vm);
-            await _context.SaveChangesAsync();
+            _context.ProductComments.RemoveRange(product.ProductComments);
         }
+
+        if (product.ProductRatings != null && product.ProductRatings.Any())
+        {
+            _context.ProductRatings.RemoveRange(product.ProductRatings);
+        }
+
+        _context.Products.Remove(product);
+        await _context.SaveChangesAsync();
 
         return RedirectToAction(nameof(Index));
     }

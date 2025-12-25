@@ -209,11 +209,6 @@ C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\UniqIo.csproj.CoreC
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\UniqIo.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets\msbuild.UniqIo.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets\msbuild.build.UniqIo.props
-C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UniqIo.props
-C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UniqIo.props
-C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\scopedcss\bundle\UniqIo.styles.css
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\UniqIo.csproj.Up2Date
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\UniqIo.dll
@@ -261,3 +256,11 @@ C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\bin\Debug\net8.0\Microsoft.AspNetCor
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\bin\Debug\net8.0\UniqIo.staticwebassets.endpoints.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\99477\Desktop\UniqIo\UniqIo\UniqIo\obj\Debug\net8.0\staticwebassets.build.json.cache
